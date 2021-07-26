@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: 700;
+}
+header {
+  margin: 30px;
+}
+main {
+  margin: 30px;
+  display: flex;
+}
+.data {
+  flex: 2;
+  margin: auto;
+}
+#jmap {
+  width: 500px;
+  height: 500px;
+  flex: 1;
+  margin: 30px;
+}
+h2 {
+  color: #696969;
+}
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  #jmap {
+    margin: 5px;
+    width: 300px;
+    order: 1;
+  }
+  .data {
+    order: 2;
+  }
+}

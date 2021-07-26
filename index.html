@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather report</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./jmap.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>このページでは気象庁のJSONデータを取得し表示しています。地図をクリックすると天気の概要を表示します。</p>
+        <a href="https://bubudoufu.com/webapp/">HOMEへ戻る</a>
+    </header>
+    <main>
+        <div class="data">
+            <h1></h1>
+            <h2>発表時間</h2>
+            <p id="time"></p>
+            <h2>概要</h2>
+            <p id="text"></p>
+        </div>
+        <div id="jmap"></div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
